@@ -5,7 +5,7 @@
 
 As per the Eqn (9) from Prof. Epplers paprer [1],
 
-![alt text](https://github.com/kjayawar/Redesign/blob/master/Redesign_Docs_files/Formulation.PNG)
+![png](Redesign_Docs_files/Formulation.PNG)
 
 In practice, the Fourier coeifficients that goes in to the program can be generated through **MDES -> Pert** menu in **XFoil**  
 This approach generally works on any airfoil, regardless of non-equially spaced phi, camber and thickenss distribution, additional LE points etc, and hence could be considered very flexible. 
