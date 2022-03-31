@@ -5,38 +5,14 @@
 
 As per the Eqn (9) from Prof. Epplers paprer [1],
 
-$$
-\begin{align}
-\sum_{m=0}^{\infty} a_m cos(m\phi) + b_m sin(m\phi) = -ln\big[\frac{v(\phi)}{2cos(\frac{\phi}{2} -\alpha)}\big]
-\end{align}
-$$
-
-By differentiating the equation with respect to $\phi$
-
-$$
-\begin{align}
-\sum_{m=0}^{\infty} a_m cos(m\phi) + b_m sin(m\phi) = -ln\big[v(\phi)\big] + ln\big[2cos(\frac{\phi}{2} -\alpha)\big]\\
-\frac{\partial}{\partial \phi} \sum_{m=0}^{\infty} a_m cos(m\phi) + b_m sin(m\phi) = - \frac{\partial}{\partial \phi} ln\big[v(\phi)\big] + \frac{\partial}{\partial \phi} ln\big[2cos(\frac{\phi}{2} -\alpha)\big]\\
-\sum_{m=0}^\infty m b_m cos(m\phi) - m a_m sin(m\phi) = -\frac{v'(\phi)}{v(\phi)} - tan(\frac{\phi}{2} - \alpha)\\
-\end{align}
-$$
-
-When $\alpha = \alpha^*$, $v'(\phi)$ becomes $0$, hence the second term vanishes away
-
-$$
-\begin{align}
-\sum_{m=0}^\infty m b_m cos(m\phi) - m a_m sin(m\phi) = - tan(\frac{\phi}{2} - \alpha^*)\\
-tan^{-1}\big[\sum_{m=0}^\infty m b_m cos(m\phi) - m a_m sin(m\phi)\big] = \frac{\phi}{2} - \alpha^*\\
-\frac{\phi}{2} - tan^{-1}\big[\sum_{m=0}^\infty m b_m cos(m\phi) - m a_m sin(m\phi)\big] = \alpha^*\\
-\end{align}
-$$
+![alt text](https://github.com/kjayawar/Redesign/blob/master/Redesign_Docs_files/Formulation.PNG?raw=true)
 
 In practice, the Fourier coeifficients that goes in to the program can be generated through **MDES -> Pert** menu in **XFoil**  
 This approach generally works on any airfoil, regardless of non-equially spaced phi, camber and thickenss distribution, additional LE points etc, and hence could be considered very flexible. 
 
 ## Implementation and Usage
 
-Actual implementation details listed in the Redesign.py file closly follow what is been described above. Functions are heavily commented as well, for the ease of understanding.  
+Actual implementation details listed in the Redesign.py file closly follow what is been described above with heavily commented functions.  
 As for the usage; this can be run on a notebook as shown below or on any other python REPL.
 
 
