@@ -3,8 +3,6 @@
 
 ## Theoritical Derivation
 
-As per the Eqn (9) from Prof. Epplers paprer [1],
-
 ![png](Redesign_Docs_files/Formulation.PNG)
 
 In practice, the Fourier coeifficients that goes in to the program can be generated through **MDES -> Pert** menu in **XFoil**  
